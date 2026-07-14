@@ -1,0 +1,15 @@
+{
+  "name": "aws-pricing-automation",
+  "version": "1.0.0",
+  "description": "Automação para gerar estimativas de custo de nuvem reais e compartilháveis (AWS Pricing Calculator via Playwright + gerador de calculadora HTML Azure)",
+  "type": "module",
+  "scripts": {
+    "aws:example": "node aws/build_estimate_example.mjs",
+    "azure:gen": "node azure/gen_azure_html.mjs azure/example.spec.json saida.html",
+    "azure:verify": "node azure/verify_azure_html.mjs saida.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}

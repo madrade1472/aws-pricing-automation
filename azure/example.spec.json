@@ -1,0 +1,18 @@
+{
+  "titulo": "Calculadora de Custos Azure — Cenário de Teste (~US$ 10.000/mês)",
+  "subtitulo": "Stack enterprise representativo (compute + dados + rede + observabilidade)",
+  "regiao": "East US · pay-as-you-go · USD",
+  "rodape": "Cenário de teste com preços de varejo representativos (East US, pay-as-you-go). O consumo real e descontos (Reserved Instances, Azure Hybrid Benefit, Savings Plans) podem reduzir o total. Ajuste quantidades e preços conforme a proposta.",
+  "servicos": [
+    {"categoria":"Compute","servico":"Virtual Machines — D8s v5 (8 vCPU / 32 GB, Linux)","detalhe":"App tier · 730 h/mês · pay-as-you-go","qtd":11,"unidade":"VM","preco":280.32},
+    {"categoria":"Compute","servico":"Virtual Machines — E8s v5 (8 vCPU / 64 GB, Linux)","detalhe":"Memory-optimized · processamento/cache · 730 h/mês","qtd":4,"unidade":"VM","preco":367.92},
+    {"categoria":"Storage","servico":"Managed Disks — Premium SSD P30 (1 TiB)","detalhe":"Discos de dados dos VMs","qtd":16,"unidade":"disco","preco":135.17},
+    {"categoria":"Storage","servico":"Blob Storage — Hot LRS","detalhe":"Armazenamento de objetos","qtd":10000,"unidade":"GB","preco":0.0184},
+    {"categoria":"Databases","servico":"Azure SQL Database — 8 vCore General Purpose (Gen5)","detalhe":"Provisionado + armazenamento incluso","qtd":1,"unidade":"instância","preco":1460.00},
+    {"categoria":"Databases","servico":"Azure Cache for Redis — Premium P1 (6 GB)","detalhe":"730 h/mês","qtd":1,"unidade":"instância","preco":401.50},
+    {"categoria":"Networking","servico":"Application Gateway v2 + WAF","detalhe":"Gateway + capacity units (baseline)","qtd":1,"unidade":"gateway","preco":330.00},
+    {"categoria":"Networking","servico":"Bandwidth — egress para internet","detalhe":"Saída de dados (tier ~$0,087/GB)","qtd":5000,"unidade":"GB","preco":0.087},
+    {"categoria":"Networking","servico":"Load Balancer — Standard","detalhe":"Regras + dados processados","qtd":1,"unidade":"LB","preco":25.00},
+    {"categoria":"Management","servico":"Azure Monitor / Log Analytics — ingestão","detalhe":"Logs e métricas (após 5 GB grátis · $2,30/GB)","qtd":195,"unidade":"GB","preco":2.30}
+  ]
+}
