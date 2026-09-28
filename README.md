@@ -17,6 +17,19 @@ Calculadora Azure interativa gerada a partir de um spec JSON — quantidades e p
 
 ---
 
+## Uso com o Claude Code
+
+O repositório traz `CLAUDE.md` e os comandos `/calc_aws` e `/calc_microsoft` em
+`.claude/commands/`. Abra o Claude Code nesta pasta e aponte a proposta:
+
+```
+/calc_aws a proposta está em ~/propostas/cliente/proposta.docx
+```
+
+Detalhes e como usar de qualquer pasta em [docs/USO_COM_CLAUDE_CODE.md](docs/USO_COM_CLAUDE_CODE.md).
+
+---
+
 ## Por que existe
 
 O link genérico do calculador oficial não reflete o dimensionamento real de uma proposta. Este projeto transforma uma **lista de serviços + volumes** em uma estimativa concreta e compartilhável:
